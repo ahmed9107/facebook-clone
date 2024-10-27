@@ -3,22 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+    rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Facebook Clone</title>
 </head>
 <body>
   <div class="container">
-    <div class="navbar"></div>
-    <!-- <div data-include="views/navbar"></div> -->
+    <div class="navbar">
+      <div class="fb-icon">
+        <a href="#"><img src="imgs/Facebook.png" alt=""></a>
+        <div class="search">
+          <input type="search" placeholder="Search Facebook">
+        </div>
+      </div>
+      <div class="navbar__middle">
+        <div class="fb-icons">
+          <div class="fb-icons__icon"><i class="ri-home-4-fill"></i></div>
+          <div class="fb-icons__icon"><i class="ri-tv-2-line"></i></div>
+          <div class="fb-icons__icon"><i class="ri-store-2-line"></i></div>
+          <div class="fb-icons__icon"><i></i></div>
+          <div class="fb-icons__icon"><i></i></div>
+        </div>
+      </div>
+      <div class="navbar__icons"></div>
+    </div>
     <div class="page-content">
       <section class="sidebar"></section>
       <section class="main-content"></section>
       <section class="right-section"></section>
-      <!-- <section data-include="views/page-content/sidebar"></section>
-      <section data-include="views/page-content/main-content"></section>
-      <section data-include="views/page-content/right-section"></section> -->
     </div>
   </div>
-  <script src="js/script.js"></script>
 </body>
 </html>
