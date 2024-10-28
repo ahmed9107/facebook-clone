@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+*:focus{
+  outline: none;
+}
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+// Start Navbar
+.navbar {
+  display: inline-flex;
+}
+.navbar .navbar__left{
+  display: flex;
+}
+.navbar .navbar__left img{
+  width: 40px;
+  height: 40px;
+}
+// End Navbar

@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
+  <!-- <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    rel="stylesheet"/> -->
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Facebook Clone</title>
 </head>
 <body>
   <div class="container">
     <div class="navbar">
-      <div class="fb-icon">
+      <div class="navbar__left">
         <a href="#"><img src="imgs/Facebook.png" alt=""></a>
         <div class="search">
           <input type="search" placeholder="Search Facebook">
         </div>
       </div>
       <div class="navbar__middle">
-        <div class="fb-icons">
-          <div class="fb-icons__icon"><i class="ri-home-4-fill"></i></div>
-          <div class="fb-icons__icon"><i class="ri-tv-2-line"></i></div>
-          <div class="fb-icons__icon"><i class="ri-store-2-line"></i></div>
-          <div class="fb-icons__icon"><i></i></div>
-          <div class="fb-icons__icon"><i></i></div>
-        </div>
+        <div class="navbar__middle-icon"><i class="fa-solid fa-house"></i></div>
+        <div class="navbar__middle-icon"><i class="fa-solid fa-tv"></i></div>
+        <div class="navbar__middle-icon"><i class="fa-solid fa-store"></i></div>
+        <div class="navbar__middle-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="navbar__middle-icon"><i class="fa-solid fa-chess-board"></i></div>
       </div>
-      <div class="navbar__icons"></div>
+      <div class="navbar__right">
+        <div class="navbar__right-icons"><i class="fa-brands fa-facebook-messenger"></i></div>
+        <div class="navbar__right-icons"><i class="fa-solid fa-bell"></i></div>
+        <div class="navbar__right-profile"></div>
+      </div>
     </div>
     <div class="page-content">
       <section class="sidebar"></section>
