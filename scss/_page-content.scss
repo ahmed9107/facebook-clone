@@ -1,0 +1,16 @@
+// Start Page Content
+.page-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__left{
+    flex: 25% 0 0;
+  }
+  &__center{
+    flex: 50% 0 0;
+  }
+  &__right{
+    flex: 25% 0 0;
+  }
+}
+// End Page Content

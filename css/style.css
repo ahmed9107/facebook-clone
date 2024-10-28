@@ -1,3 +1,18 @@
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.page-content__left {
+  flex: 25% 0 0;
+}
+.page-content__center {
+  flex: 50% 0 0;
+}
+.page-content__right {
+  flex: 25% 0 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,14 +32,6 @@ a {
 ul {
   list-style: none;
   padding: 0;
-}
-
-.navbar {
-  display: inline-flex;
-}
-
-.navbar .navbar__left {
-  display: flex;
 }
 
 .navbar .navbar__left img {
