@@ -1,11 +1,14 @@
-// Start Page Content
-.page-content{
-  @include flex(space-between, top);
+.navbar{
+  @include flex(space-between, center);
+  // height: 60px;
+  background-color: white;
+  padding: $primary-padding;
+  box-shadow: 0 3px 8px #0000000d;
   &__left{
     flex: 25% 0 0;
     max-width: $sidebar-width;
   }
-  &__center{
+  &__middle{
     flex: 50% 0 0;
     max-width: $main-ctent-width;
   }
@@ -14,4 +17,3 @@
     max-width: $sidebar-width;
   }
 }
-// End Page Content

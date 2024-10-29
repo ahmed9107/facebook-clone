@@ -1,0 +1,41 @@
+@function rem($val) {
+  $remVal: $val;
+  @if(type-of($val)  == number){
+    $remVal: ($remVal / 16) + rem;
+  }
+  @return $remVal;
+}
+
+$primary-font: Segeo UI Historic, Segeo UI, Helvetica, Arial, sans-serif;
+$primary-bg: #f0f0f0;
+$icon-clr: #656565;
+$icons-bg-clr: #e4e4e4;
+$active-clr: #1b75e5;
+$primary-padding: rem(10);
+$sidebar-width: rem(360);
+$main-ctent-width: rem(680);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus{
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+body{
+  background-color: $primary-bg;
+  font-family: $primary-font;
+}
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

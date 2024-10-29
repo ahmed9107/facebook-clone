@@ -1,24 +1,4 @@
+@import "_global.scss";
+@import "_navbar.scss";
 @import "_page-content.scss";
 
-*{
-  box-sizing: border-box;
-}
-*:focus{
-  outline: none;
-}
-body{
-  margin: 0;
-}
-a{
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-// Start Navbar
-.navbar .navbar__left img{
-  width: 40px;
-  height: 40px;
-}
-// End Navbar
