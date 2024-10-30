@@ -7,13 +7,20 @@
   &__left{
     flex: 25% 0 0;
     max-width: $sidebar-width;
+    display: flex;
+    align-items: center;
   }
   &__middle{
     flex: 50% 0 0;
     max-width: $main-ctent-width;
+    @include flex(space-around, center);
   }
   &__right{
     flex: 25% 0 0;
     max-width: $sidebar-width;
+    @include flex(space-around, end);
   }
+}
+.navbar .navbar__left .search{
+  margin-left: rem(10);
 }

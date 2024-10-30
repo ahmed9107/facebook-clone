@@ -33,14 +33,26 @@ body {
 .navbar__left {
   flex: 25% 0 0;
   max-width: 22.5rem;
+  display: flex;
+  align-items: center;
 }
 .navbar__middle {
   flex: 50% 0 0;
   max-width: 42.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .navbar__right {
   flex: 25% 0 0;
   max-width: 22.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.navbar .navbar__left .search {
+  margin-left: 0.625rem;
 }
 
 .page-content {
