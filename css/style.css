@@ -50,8 +50,7 @@ body {
   justify-content: space-around;
   align-items: end;
 }
-
-.navbar .navbar__left .search {
+.navbar .search {
   margin-left: 0.625rem;
 }
 

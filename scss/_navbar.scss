@@ -20,7 +20,8 @@
     max-width: $sidebar-width;
     @include flex(space-around, end);
   }
-}
-.navbar .navbar__left .search{
-  margin-left: rem(10);
+
+  .search{
+    margin-left: rem(10);
+  }
 }
