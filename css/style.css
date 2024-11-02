@@ -47,7 +47,6 @@ body {
   flex: 25% 0 0;
   max-width: 22.5rem;
   display: flex;
-  justify-content: space-around;
   align-items: end;
 }
 .navbar .search {

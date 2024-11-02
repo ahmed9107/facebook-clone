@@ -18,7 +18,8 @@
   &__right{
     flex: 25% 0 0;
     max-width: $sidebar-width;
-    @include flex(space-around, end);
+    display: flex;
+    align-items: end;
   }
 
   .search{
