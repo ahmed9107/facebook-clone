@@ -6,29 +6,44 @@
   &__left{
     flex: 25% 0 0;
     max-width: $sidebar-width;
-    display: flex;
-    align-items: center;
+    @include flex(start, center);
   }
   &__middle{
     flex: 50% 0 0;
     max-width: $main-ctent-width;
     @include flex(space-around, center);
+    font-size: 1.5rem;
+    &-icon{
+      width: 100%;
+      color: $icon-clr;
+      i{
+        @include flex(center);
+      }
+    }
   }
   &__right{
     flex: 25% 0 0;
     max-width: $sidebar-width;
     display: flex;
     justify-content: end;
+    gap: rem(10);
   }
 
-  .search{
-    margin-left: rem(10);
-    input{
-      background-color: #F1F2F6;
-      padding: rem(5) rem(10);
-      height: rem(40);
-      border: none;
-      border-radius: rem(20);
-    }
+  .search input{
+    width: 100%;
+    @include rounded-box(40, #F1F2F6);
   }
+}
+.active{
+  color: $active-clr;
+  position: relative;
+}
+.active::before{
+  content: "";
+  position: absolute;
+  bottom: rem(-10);
+  left: 0;
+  width: 100%;
+  height: rem(4);
+  background-color: $active-clr;
 }
