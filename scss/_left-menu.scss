@@ -1,0 +1,25 @@
+.page-content__left{
+  flex: 25% 0 0;
+  max-width: $sidebar-width;
+  padding: 0 rem(20);
+  .title{
+    @include flex(space-between, center, 0);
+  }
+  .btn a{
+    color: $active-clr;
+  }
+  .menu{
+    margin-top: rem(20);
+    li{
+      @include flex(start, center);
+      margin-bottom: rem(10);
+    }
+    i{
+      background-color: $primary-clr;
+      height: rem(40);
+      width: rem(40);
+      border-radius: 50%;
+      @include flex(center, center);
+    }
+  }
+}

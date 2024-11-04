@@ -8,6 +8,7 @@
 
 $primary-font: Segeo UI Historic, Segeo UI, Helvetica, Arial, sans-serif;
 $primary-bg: #f0f0f0;
+$primary-clr: #F1F2F6;
 $icon-clr: #656565;
 $icons-bg-clr: #e4e4e4;
 $active-clr: #1b75e5;
@@ -46,4 +47,12 @@ body{
   padding: rem($height/2);
   height: rem($height);
   border-radius: rem($height/2);
+}
+@mixin rounded-icon ($clr: $primary-clr, $height: 40, $width: 40){
+  background-color: $clr;
+  height: rem($height);
+  width: rem($width);
+  border-radius: 50%;
+  object-fit: cover;
+  @include flex(center, center);
 }
