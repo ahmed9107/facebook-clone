@@ -2,6 +2,7 @@
   flex: 25% 0 0;
   max-width: $sidebar-width;
   padding: 0 rem(20);
+  font-weight: 600;
   .title{
     @include flex(space-between, center, 0);
   }

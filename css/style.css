@@ -107,6 +107,7 @@ body {
   flex: 25% 0 0;
   max-width: 22.5rem;
   padding: 0 1.25rem;
+  font-weight: 600;
 }
 .page-content__left .title {
   display: flex;
