@@ -14,13 +14,14 @@
     li{
       @include flex(start, center);
       margin-bottom: rem(10);
+      cursor: pointer;
     }
     i{
-      background-color: $primary-clr;
-      height: rem(40);
-      width: rem(40);
-      border-radius: 50%;
-      @include flex(center, center);
+      font-size: 1.5rem;
+      @include rounded-icon();
+    }
+    img{
+      @include rounded-icon();
     }
   }
 }

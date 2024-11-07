@@ -2,10 +2,6 @@
 .page-content{
   @include flex(space-between, top, 0);
   margin-top: rem(20);
-  &__center{
-    flex: 50% 0 0;
-    max-width: $main-ctent-width;
-  }
   &__right{
     flex: 25% 0 0;
     max-width: $sidebar-width;

@@ -78,6 +78,9 @@ body {
   align-items: center;
   gap: 0.625rem;
 }
+.navbar__right img {
+  width: 100%;
+}
 .navbar .search input {
   width: 100%;
   border: none;
@@ -127,12 +130,28 @@ body {
   align-items: center;
   gap: 0.625rem;
   margin-bottom: 0.625rem;
+  cursor: pointer;
 }
 .page-content__left .menu i {
+  font-size: 1.5rem;
   background-color: #F1F2F6;
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.page-content__left .menu img {
+  background-color: #F1F2F6;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,11 +165,13 @@ body {
   gap: 0;
   margin-top: 1.25rem;
 }
-.page-content__center {
-  flex: 50% 0 0;
-  max-width: 42.5rem;
-}
 .page-content__right {
   flex: 25% 0 0;
   max-width: 22.5rem;
+}
+
+.page-content__center {
+  flex: 50% 0 0;
+  max-width: 42.5rem;
+  padding: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

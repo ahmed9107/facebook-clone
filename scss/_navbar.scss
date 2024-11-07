@@ -28,6 +28,9 @@
     &-icons{
       @include rounded-icon();
     }
+    img{
+      width: 100%;
+    }
   }
 
   .search input{
