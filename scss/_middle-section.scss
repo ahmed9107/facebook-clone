@@ -1,5 +1,30 @@
 .page-content__center{
   flex: 50% 0 0;
   max-width: $main-ctent-width;
-  padding: rem(20);
+  // padding: rem(20);
+  .card{
+    padding: rem(15);
+    background-color: white;
+    margin: 0 rem(20);
+    border-radius: rem(6);
+  }
+  .card-header{
+    @include flex(flex-start, center, 0);
+    img{
+      width: rem(50);
+      height: rem(50);
+      border-radius: 50%;
+      margin-right: rem(10);
+    }
+    .card-title{
+      line-height: 1.5;
+      margin-right: auto;
+    }
+    .card-name{
+      font-weight: bold;
+    }
+    .sponsored{
+      color: #666;
+    }
+  }
 }
