@@ -3,6 +3,9 @@
   background-color: white;
   padding: $primary-padding;
   box-shadow: 0 3px 8px #0000000d;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: rem(60);
   &__left{
     flex: 25% 0 0;

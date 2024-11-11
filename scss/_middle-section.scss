@@ -1,15 +1,15 @@
 .page-content__center{
   flex: 50% 0 0;
   max-width: $main-ctent-width;
-  // padding: rem(20);
+  padding: 0 rem(10);
   .card{
-    padding: rem(15);
     background-color: white;
-    margin: 0 rem(20);
     border-radius: rem(6);
+    border: rem(1) solid #e0e0e0;
   }
   .card-header{
     @include flex(flex-start, center, 0);
+    padding: rem(10);
     img{
       width: rem(50);
       height: rem(50);
@@ -24,7 +24,58 @@
       font-weight: bold;
     }
     .sponsored{
-      color: #666;
+      color: #9e9e9e;
+      font-size: rem(14);
     }
+  }
+  .content{
+    padding: rem(10);
+  }
+  .card-img{
+    background-color: $primary-bg;
+    border-bottom: rem(1) solid #e0e0e0;
+    margin-bottom: rem(10);
+    img{
+      width: 100%;
+    }
+    .img-link{
+      @include flex(space-between, center, 0);
+      padding: rem(10);
+      .txt-link{
+        font-weight: bold;
+        color: black;
+        max-width: 300px;
+      }
+      .lrn-more-btn{
+        border: none;
+        color: black;
+        font-weight: bold;
+        background-color: #e3e0e0;
+        padding: rem(10);
+        border-radius: rem(5);
+      }
+    }
+  }
+  .likes{
+    @include flex(flex-start, center, rem(5));
+    margin: 0 rem(10) rem(10);
+    border-bottom: rem(1) solid #c8c7c7;
+    padding-bottom: rem(10);
+    .icon{
+      background-color: $active-clr;
+      padding: rem(3);
+      font-size: rem(10);
+      color: white;
+      border-radius: 50%;
+    }
+    span{
+      font-size: rem(14);
+      color: #9e9e9e;
+    }
+  }
+  .action-bar{
+    @include flex(space-around, center, 0);
+    padding: rem(10);
+    color: #7d7d7d;
   }
 }
