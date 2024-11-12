@@ -2,10 +2,74 @@
   flex: 50% 0 0;
   max-width: $main-ctent-width;
   padding: 0 rem(10);
+  .stories{
+    position: relative;
+    width: 100%;
+    height: rem(200);
+    overflow: hidden;
+    .stories-boxes{
+      @include flex(center, center, rem(10));
+      width: fit-content;
+      .add-story{
+        position: absolute;
+        top: rem(10);
+        left: rem(10);
+        width: rem(50);
+        height: rem(50);
+        @include flex(center, center, 0);
+        border-radius: 50%;
+        border: rem(2) solid white;
+        color: white;
+        background-color: rgb(220 220 220 / 70%);
+      }
+      .story-box{
+        position: relative;
+        width: rem(100);
+        height: rem(190);
+        border-radius: rem(10);
+        overflow: hidden;
+        background-color: #7d7d7d;
+      }
+      .profile{
+        position: absolute;
+        top: rem(10);
+        left: rem(10);
+        width: rem(50);
+        height: rem(50);
+        border-radius: 50%;
+        border: rem(2) solid white;
+      }
+      .story{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .txt{
+        position: absolute;
+        bottom: rem(10);
+        left: rem(10);
+        color: white;
+        font-weight: bold;
+      }
+    }
+    .scroll-btn{
+      @include flex(center,center,0);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 4;
+      background-color: white;
+      width: rem(40);
+      height: rem(40);
+      border-radius: 50%;
+    }
+  }
   .card{
     background-color: white;
     border-radius: rem(6);
     border: rem(1) solid #e0e0e0;
+    margin-top: rem(15);
   }
   .card-header{
     @include flex(flex-start, center, 0);
@@ -77,5 +141,30 @@
     @include flex(space-around, center, 0);
     padding: rem(10);
     color: #7d7d7d;
+  }
+  .share-field{
+    background-color: white;
+    border-radius: rem(6);
+    border: rem(1) solid #e0e0e0;
+    margin-top: rem(15);
+    padding: $primary-padding;
+    .top{
+      @include flex(flex-start, center);
+      width: 100%;
+      .thoughts{
+        flex: 1;
+        input{
+          width: 100%;
+          @include rounded-box(40, $primary-clr);
+        }
+      }
+    }
+    .actions{
+      @include flex(space-around, center, 0);
+      margin-top: rem(10);
+      padding: rem(10);
+      color: #7d7d7d;
+      border-top: rem(1) solid #c8c7c7;
+    }
   }
 }

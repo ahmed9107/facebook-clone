@@ -34,10 +34,11 @@ body {
   top: 0;
   width: 100%;
   height: 3.75rem;
+  z-index: 2;
 }
 .navbar__left {
   flex: 25% 0 0;
-  max-width: 22.5rem;
+  max-width: 21.875rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -45,7 +46,7 @@ body {
 }
 .navbar__middle {
   flex: 50% 0 0;
-  max-width: 42.5rem;
+  max-width: 36.25rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,7 +64,7 @@ body {
 }
 .navbar__right {
   flex: 25% 0 0;
-  max-width: 22.5rem;
+  max-width: 21.875rem;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -111,7 +112,7 @@ body {
 
 .page-content__left {
   flex: 25% 0 0;
-  max-width: 22.5rem;
+  max-width: 21.875rem;
   padding: 0 1.25rem;
   font-weight: 600;
 }
@@ -171,18 +172,93 @@ body {
 }
 .page-content__right {
   flex: 25% 0 0;
-  max-width: 22.5rem;
+  max-width: 21.875rem;
 }
 
 .page-content__center {
   flex: 50% 0 0;
-  max-width: 42.5rem;
+  max-width: 36.25rem;
   padding: 0 0.625rem;
+}
+.page-content__center .stories {
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  overflow: hidden;
+}
+.page-content__center .stories .stories-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page-content__center .stories .stories-boxes .add-story {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 50%;
+  border: 0.125rem solid white;
+  color: white;
+  background-color: rgba(220, 220, 220, 0.7);
+}
+.page-content__center .stories .stories-boxes .story-box {
+  position: relative;
+  width: 6.25rem;
+  height: 11.875rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  background-color: #7d7d7d;
+}
+.page-content__center .stories .stories-boxes .profile {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  border: 0.125rem solid white;
+}
+.page-content__center .stories .stories-boxes .story {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-content__center .stories .stories-boxes .txt {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  color: white;
+  font-weight: bold;
+}
+.page-content__center .stories .scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
 }
 .page-content__center .card {
   background-color: white;
   border-radius: 0.375rem;
   border: 0.0625rem solid #e0e0e0;
+  margin-top: 0.9375rem;
 }
 .page-content__center .card-header {
   display: flex;
@@ -266,4 +342,39 @@ body {
   gap: 0;
   padding: 0.625rem;
   color: #7d7d7d;
+}
+.page-content__center .share-field {
+  background-color: white;
+  border-radius: 0.375rem;
+  border: 0.0625rem solid #e0e0e0;
+  margin-top: 0.9375rem;
+  padding: 0.625rem;
+}
+.page-content__center .share-field .top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+}
+.page-content__center .share-field .top .thoughts {
+  flex: 1;
+}
+.page-content__center .share-field .top .thoughts input {
+  width: 100%;
+  border: none;
+  background-color: #F1F2F6;
+  padding: 1.25rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+}
+.page-content__center .share-field .actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+  color: #7d7d7d;
+  border-top: 0.0625rem solid #c8c7c7;
 }/*# sourceMappingURL=style.css.map */
