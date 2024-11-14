@@ -22,6 +22,10 @@ body {
   font-family: Segeo UI Historic, Segeo UI, Helvetica, Arial, sans-serif;
 }
 
+h2 {
+  color: #737272;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -161,6 +165,19 @@ body {
   align-items: center;
   gap: 0.625rem;
 }
+.page-content__left .short-sec {
+  margin-top: 0.9375rem;
+  border-top: 0.0625rem solid #dbdbdb;
+  padding-top: 0.625rem;
+}
+.page-content__left .see-more {
+  width: 100%;
+  background-color: #dedede;
+  padding: 0.625rem;
+  font-weight: bold;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
 
 .page-content {
   display: flex;
@@ -169,10 +186,6 @@ body {
   gap: 0;
   margin-top: 4.375rem;
   margin-bottom: 1.875rem;
-}
-.page-content__right {
-  flex: 25% 0 0;
-  max-width: 21.875rem;
 }
 
 .page-content__center {
@@ -198,16 +211,18 @@ body {
   position: absolute;
   top: 0.625rem;
   left: 0.625rem;
-  width: 3.125rem;
+  background-color: rgba(220, 220, 220, 0.7);
   height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0;
-  border-radius: 50%;
+  gap: 0.625rem;
   border: 0.125rem solid white;
   color: white;
-  background-color: rgba(220, 220, 220, 0.7);
 }
 .page-content__center .stories .stories-boxes .story-box {
   position: relative;
@@ -221,9 +236,16 @@ body {
   position: absolute;
   top: 0.625rem;
   left: 0.625rem;
-  width: 3.125rem;
+  background-color: rgba(220, 220, 220, 0.7);
   height: 3.125rem;
+  width: 3.125rem;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
   border: 0.125rem solid white;
 }
 .page-content__center .stories .stories-boxes .story {
@@ -248,11 +270,12 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 4;
+  z-index: 1;
   background-color: white;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 .page-content__center .card {
   background-color: white;
@@ -268,9 +291,16 @@ body {
   padding: 0.625rem;
 }
 .page-content__center .card-header img {
-  width: 3.125rem;
+  background-color: rgba(220, 220, 220, 0.7);
   height: 3.125rem;
+  width: 3.125rem;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
   margin-right: 0.625rem;
 }
 .page-content__center .card-header .card-title {
@@ -377,4 +407,70 @@ body {
   padding: 0.625rem;
   color: #7d7d7d;
   border-top: 0.0625rem solid #c8c7c7;
+}
+
+.page-content__right {
+  flex: 25% 0 0;
+  max-width: 21.875rem;
+  padding: 0 1.25rem;
+  font-weight: 600;
+}
+.page-content__right .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.page-content__right .contacts {
+  margin-top: 1.25rem;
+}
+.page-content__right .contacts li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
+  cursor: pointer;
+}
+.page-content__right .contacts .image {
+  background-color: #F1F2F6;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.page-content__right .contacts .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.page-content__right .contacts .online {
+  position: relative;
+}
+.page-content__right .contacts .online::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: green;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  z-index: 2;
+  border: 0.125rem solid white;
+}
+.page-content__right .contacts .act-story {
+  border: 0.125rem solid #1b75e5;
+  padding: 0.125rem;
 }/*# sourceMappingURL=style.css.map */

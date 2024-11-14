@@ -14,13 +14,9 @@
         position: absolute;
         top: rem(10);
         left: rem(10);
-        width: rem(50);
-        height: rem(50);
-        @include flex(center, center, 0);
-        border-radius: 50%;
+        @include rounded-icon(rgb(220 220 220 / 70%), rem(50), rem(50));
         border: rem(2) solid white;
         color: white;
-        background-color: rgb(220 220 220 / 70%);
       }
       .story-box{
         position: relative;
@@ -34,9 +30,7 @@
         position: absolute;
         top: rem(10);
         left: rem(10);
-        width: rem(50);
-        height: rem(50);
-        border-radius: 50%;
+        @include rounded-icon(rgb(220 220 220 / 70%), rem(50), rem(50));
         border: rem(2) solid white;
       }
       .story{
@@ -58,11 +52,12 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 4;
+      z-index: 1;
       background-color: white;
       width: rem(40);
       height: rem(40);
       border-radius: 50%;
+      cursor: pointer;
     }
   }
   .card{
@@ -75,9 +70,7 @@
     @include flex(flex-start, center, 0);
     padding: rem(10);
     img{
-      width: rem(50);
-      height: rem(50);
-      border-radius: 50%;
+      @include rounded-icon(rgb(220 220 220 / 70%), rem(50), rem(50));
       margin-right: rem(10);
     }
     .card-title{

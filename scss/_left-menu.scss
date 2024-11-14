@@ -24,4 +24,17 @@
       @include rounded-icon();
     }
   }
+  .short-sec{
+    margin-top: rem(15);
+    border-top: rem(1) solid #dbdbdb;
+    padding-top: rem(10);
+  }
+  .see-more{
+    width: 100%;
+    background-color: #dedede;
+    padding: $primary-padding;
+    font-weight: bold;
+    border-radius: rem(5);
+    text-align: center;
+  }
 }
