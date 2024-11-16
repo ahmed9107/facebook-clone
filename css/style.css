@@ -415,16 +415,26 @@ h2 {
   padding: 0 1.25rem;
   font-weight: 600;
 }
+.page-content__right .birthdays {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+}
+.page-content__right .birthdays img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .page-content__right .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0;
 }
-.page-content__right .contacts {
+.page-content__right .contacts .contacts-list {
   margin-top: 1.25rem;
 }
-.page-content__right .contacts li {
+.page-content__right .contacts .contacts-list li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -432,7 +442,7 @@ h2 {
   margin-bottom: 0.625rem;
   cursor: pointer;
 }
-.page-content__right .contacts .image {
+.page-content__right .contacts .contacts-list .image {
   background-color: #F1F2F6;
   height: 2.5rem;
   width: 2.5rem;
@@ -444,15 +454,15 @@ h2 {
   align-items: center;
   gap: 0.625rem;
 }
-.page-content__right .contacts .image img {
+.page-content__right .contacts .contacts-list .image img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.page-content__right .contacts .online {
+.page-content__right .contacts .contacts-list .online {
   position: relative;
 }
-.page-content__right .contacts .online::before {
+.page-content__right .contacts .contacts-list .online::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -470,7 +480,7 @@ h2 {
   z-index: 2;
   border: 0.125rem solid white;
 }
-.page-content__right .contacts .act-story {
+.page-content__right .contacts .contacts-list .act-story {
   border: 0.125rem solid #1b75e5;
   padding: 0.125rem;
 }/*# sourceMappingURL=style.css.map */
