@@ -26,6 +26,13 @@ h2 {
   color: #737272;
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -119,12 +126,6 @@ h2 {
   max-width: 21.875rem;
   padding: 0 1.25rem;
   font-weight: 600;
-}
-.page-content__left .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0;
 }
 .page-content__left .btn a {
   color: #1b75e5;
@@ -416,20 +417,27 @@ h2 {
   font-weight: 600;
 }
 .page-content__right .birthdays {
+  margin-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid #dbdbdb;
+}
+.page-content__right .birthdays .birth-friends {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.625rem;
+  padding: 1.25rem 0;
 }
-.page-content__right .birthdays img {
+.page-content__right .birthdays .birth-friends p {
+  color: #a3a3a3;
+  font-weight: normal;
+}
+.page-content__right .birthdays .birth-friends p span {
+  color: black;
+  font-weight: bold;
+}
+.page-content__right .birthdays .birth-friends img {
   width: 2.5rem;
   height: 2.5rem;
-}
-.page-content__right .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0;
 }
 .page-content__right .contacts .contacts-list {
   margin-top: 1.25rem;

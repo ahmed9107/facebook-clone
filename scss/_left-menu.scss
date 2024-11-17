@@ -3,9 +3,6 @@
   max-width: $sidebar-width;
   padding: 0 rem(20);
   font-weight: 600;
-  .title{
-    @include flex(space-between, center, 0);
-  }
   .btn a{
     color: $active-clr;
   }
