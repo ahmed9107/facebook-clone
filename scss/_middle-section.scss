@@ -161,3 +161,13 @@
     }
   }
 }
+@media (max-width: rem(767)){
+  .page-content__center{
+    flex: 100% 0 0;
+    width: 100%;
+    max-width: 100%;
+    .stories .scroll-btn{
+      display: none;
+    }
+  }
+}

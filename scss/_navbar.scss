@@ -31,6 +31,7 @@
     @include flex(end, center, rem(10));
     &-icons{
       @include rounded-icon();
+      cursor: pointer;
     }
     img{
       width: 100%;
@@ -41,6 +42,28 @@
     width: 100%;
     @include rounded-box(40, $primary-clr);
     padding-right: rem(10);
+  }
+}
+@media (max-width: rem(767)) {
+  .navbar{
+    flex-wrap: wrap;
+    height: rem(120);
+    padding: 0;
+    &__left{
+      flex: 45% 0 0;
+      padding-top: rem(10);
+      padding-left: rem(10);
+    }
+    &__middle{
+      flex: 100% 0 0;
+      max-width: 100%;
+      font-size: 1.2rem;
+    }
+    &__right{
+      position: absolute;
+      right: rem(10);
+      top: rem(10);
+    }
   }
 }
 .active{

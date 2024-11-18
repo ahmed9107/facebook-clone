@@ -4,4 +4,9 @@
   margin-top: rem(70);
   margin-bottom: rem(30);
 }
+@media (max-width: rem(767)){
+  .page-content{
+    margin-top: rem(130);
+  }
+}
 // End Page Content

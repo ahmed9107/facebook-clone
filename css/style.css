@@ -92,6 +92,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  cursor: pointer;
 }
 .navbar__right img {
   width: 100%;
@@ -106,6 +107,28 @@ h2 {
   padding-right: 0.625rem;
 }
 
+@media (max-width: 47.9375rem) {
+  .navbar {
+    flex-wrap: wrap;
+    height: 7.5rem;
+    padding: 0;
+  }
+  .navbar__left {
+    flex: 45% 0 0;
+    padding-top: 0.625rem;
+    padding-left: 0.625rem;
+  }
+  .navbar__middle {
+    flex: 100% 0 0;
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+  .navbar__right {
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
+  }
+}
 .active {
   color: #1b75e5;
   position: relative;
@@ -180,6 +203,11 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 47.9375rem) {
+  .page-content__left {
+    display: none;
+  }
+}
 .page-content {
   display: flex;
   justify-content: space-between;
@@ -189,6 +217,11 @@ h2 {
   margin-bottom: 1.875rem;
 }
 
+@media (max-width: 47.9375rem) {
+  .page-content {
+    margin-top: 8.125rem;
+  }
+}
 .page-content__center {
   flex: 50% 0 0;
   max-width: 36.25rem;
@@ -410,6 +443,16 @@ h2 {
   border-top: 0.0625rem solid #c8c7c7;
 }
 
+@media (max-width: 47.9375rem) {
+  .page-content__center {
+    flex: 100% 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .page-content__center .stories .scroll-btn {
+    display: none;
+  }
+}
 .page-content__right {
   flex: 25% 0 0;
   max-width: 21.875rem;
@@ -491,4 +534,10 @@ h2 {
 .page-content__right .contacts .contacts-list .act-story {
   border: 0.125rem solid #1b75e5;
   padding: 0.125rem;
+}
+
+@media (max-width: 47.9375rem) {
+  .page-content__right {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
