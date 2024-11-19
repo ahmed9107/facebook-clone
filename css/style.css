@@ -528,7 +528,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  z-index: 2;
+  z-index: 1;
   border: 0.125rem solid white;
 }
 .page-content__right .contacts .contacts-list .act-story {

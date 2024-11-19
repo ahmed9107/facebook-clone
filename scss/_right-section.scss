@@ -47,7 +47,7 @@
       bottom: 0;
       right: 0;
       @include rounded-icon(green, rem(10), rem(10));
-      z-index: 2;
+      z-index: 1;
       border: rem(2) solid white;
     }
     .act-story{
